@@ -28,3 +28,14 @@ async def read_users() -> dict:
     "income": 50}
     users = [default_user]
     return {"data" : users}
+
+@app.post("/generate")
+async def generate_summary(generate_request) -> dict:
+    generate_request.title
+    print("received request")
+    default_user = {"userName": "ligia",
+                    "userId": "string",
+                    "envelopes": [],
+                    "income": 50}
+    users = [default_user]
+    return {"data" : users}
